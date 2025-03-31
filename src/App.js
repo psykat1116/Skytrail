@@ -46,9 +46,9 @@ function App() {
   const [value, setValue] = useState("");
   const [categoryValue, setCategoryValue] = useState(null);
 
-  const TextUrl = `https://newsapi.org/v2/top-headlines?q=${text}&apiKey=ea6c135a167440daace246c3c7fcedca`;
-  const Url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=ea6c135a167440daace246c3c7fcedca`;
-  const CategoryUrl = `https://newsapi.org/v2/top-headlines?country=us&category=${categoryValue}&apiKey=ea6c135a167440daace246c3c7fcedca`;
+  const TextUrl = `https://newsapi.org/v2/top-headlines?q=${text}&apiKey=${API_KEY}`;
+  const Url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${API_KEY}`;
+  const CategoryUrl = `https://newsapi.org/v2/top-headlines?country=us&category=${categoryValue}&apiKey=${API_KEY}`;
 
   useEffect(() => {
     const fetchBlogs = async () => {
